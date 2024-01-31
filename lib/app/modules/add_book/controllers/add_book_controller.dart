@@ -7,6 +7,7 @@ import 'package:petugas_perpustakaan_c/app/data/constan/endpoin.dart';
 import 'package:petugas_perpustakaan_c/app/data/provider/api_provider.dart';
 import '../../../data/provider/storage_provider.dart';
 import '../../../routes/app_pages.dart';
+import '../../book/controllers/book_controller.dart';
 
 class AddBookController extends GetxController {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
@@ -14,10 +15,11 @@ class AddBookController extends GetxController {
   final TextEditingController penulisController = TextEditingController();
   final TextEditingController penerbitController = TextEditingController();
   final TextEditingController tahun_terbitController = TextEditingController();
+  final loading = false.obs;
+  final BookController _bookController = Get.find();
 
   //TODO: Implement LoginController
 
-  final loading = false.obs;
 
   @override
   void onInit() {
@@ -49,6 +51,8 @@ class AddBookController extends GetxController {
             });
 
         if (response.statusCode == 201) {
+          _bookController.getData();
+          Get.back();
           Get.snackbar("Sukses", "Input Berhasil", backgroundColor: Colors.green);
           Get.toNamed(Routes.BOOK);
         } else {
