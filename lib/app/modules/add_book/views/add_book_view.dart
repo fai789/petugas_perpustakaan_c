@@ -23,7 +23,7 @@ class AddBookView extends GetView<AddBookController> {
                   decoration: InputDecoration(hintText: "Masukan Judul"),
                   validator: (value) {
                     if (value!.length < 2) {
-                      return "Username tidak boleh kosong";
+                      return "Judul tidak boleh kosong";
                     }
                     return null;
                   }),
@@ -32,7 +32,7 @@ class AddBookView extends GetView<AddBookController> {
                   decoration: InputDecoration(hintText: "Masukan Penulis"),
                   validator: (value) {
                     if (value!.length < 2) {
-                      return "Password tidak boleh kosong";
+                      return "Penulis tidak boleh kosong";
                     }
                     return null;
                   }),
@@ -41,7 +41,7 @@ class AddBookView extends GetView<AddBookController> {
                   decoration: InputDecoration(hintText: "Masukan Penerbit"),
                   validator: (value) {
                     if (value!.length < 2) {
-                      return "Username tidak boleh kosong";
+                      return "Penerbit tidak boleh kosong";
                     }
                     return null;
                   }),
@@ -50,7 +50,7 @@ class AddBookView extends GetView<AddBookController> {
                   decoration: InputDecoration(hintText: "Masukan Tahun Terbit"),
                   validator: (value) {
                     if (value!.length < 2) {
-                      return "Username tidak boleh kosong";
+                      return "Tahun Terbit tidak boleh kosong";
                     }
                     return null;
                   }),
