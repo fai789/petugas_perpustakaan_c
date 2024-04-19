@@ -3,8 +3,8 @@ import 'package:dio/dio.dart' as dio;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:petugas_perpustakaan_c/app/data/constan/endpoin.dart';
-import 'package:petugas_perpustakaan_c/app/data/provider/api_provider.dart';
+import 'package:peminjam_perpustakaan_c/app/data/constan/endpoin.dart';
+import 'package:peminjam_perpustakaan_c/app/data/provider/api_provider.dart';
 import '../../../data/provider/storage_provider.dart';
 import '../../../routes/app_pages.dart';
 

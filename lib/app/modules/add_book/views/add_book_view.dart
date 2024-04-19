@@ -54,6 +54,15 @@ class AddBookView extends GetView<AddBookController> {
                     }
                     return null;
                   }),
+              // TextFormField(
+              //     controller: controller.sinopsisController,
+              //     decoration: InputDecoration(hintText: "Masukan Sinopsis"),
+              //     validator: (value) {
+              //       if (value!.length < 2) {
+              //         return "Sinopsis tidak boleh kosong";
+              //       }
+              //       return null;
+              //     }),
               Obx(() => controller.loading.value
                   ? CircularProgressIndicator()
                   : ElevatedButton(

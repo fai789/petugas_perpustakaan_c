@@ -4,9 +4,9 @@
 
 class ResponsePinjam {
   ResponsePinjam({
-      this.status, 
-      this.message, 
-      this.data,});
+    this.status,
+    this.message,
+    this.data,});
 
   ResponsePinjam.fromJson(dynamic json) {
     status = json['status'];
@@ -47,16 +47,16 @@ class ResponsePinjam {
 
 class DataPinjam {
   DataPinjam({
-      this.id, 
-      this.userId, 
-      this.bookId, 
-      this.tanggalPinjam, 
-      this.tanggalKembali, 
-      this.status, 
-      this.createdAt, 
-      this.updatedAt, 
-      this.user, 
-      this.book,});
+    this.id,
+    this.userId,
+    this.bookId,
+    this.tanggalPinjam,
+    this.tanggalKembali,
+    this.status,
+    this.createdAt,
+    this.updatedAt,
+    this.user,
+    this.book,});
 
   DataPinjam.fromJson(dynamic json) {
     id = json['id'];
@@ -71,8 +71,8 @@ class DataPinjam {
     book = json['book'] != null ? Book.fromJson(json['book']) : null;
   }
   int? id;
-  String? userId;
-  String? bookId;
+  int? userId;
+  int? bookId;
   String? tanggalPinjam;
   String? tanggalKembali;
   String? status;
@@ -113,14 +113,14 @@ class DataPinjam {
 
 class Book {
   Book({
-      this.id, 
-      this.kategoriId, 
-      this.judul, 
-      this.penulis, 
-      this.penerbit, 
-      this.tahunTerbit, 
-      this.createdAt, 
-      this.updatedAt,});
+    this.id,
+    this.kategoriId,
+    this.judul,
+    this.penulis,
+    this.penerbit,
+    this.tahunTerbit,
+    this.createdAt,
+    this.updatedAt,});
 
   Book.fromJson(dynamic json) {
     id = json['id'];
@@ -133,11 +133,11 @@ class Book {
     updatedAt = json['updated_at'];
   }
   int? id;
-  String? kategoriId;
+  int? kategoriId;
   String? judul;
   String? penulis;
   String? penerbit;
-  String? tahunTerbit;
+  int? tahunTerbit;
   String? createdAt;
   String? updatedAt;
 
@@ -167,14 +167,14 @@ class Book {
 
 class User {
   User({
-      this.id, 
-      this.username, 
-      this.nama, 
-      this.telp, 
-      this.alamat, 
-      this.role, 
-      this.createdAt, 
-      this.updatedAt,});
+    this.id,
+    this.username,
+    this.nama,
+    this.telp,
+    this.alamat,
+    this.role,
+    this.createdAt,
+    this.updatedAt,});
 
   User.fromJson(dynamic json) {
     id = json['id'];

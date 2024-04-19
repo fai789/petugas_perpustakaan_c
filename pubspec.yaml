@@ -1,24 +1,33 @@
-name: petugas_perpustakaan_c
+name: peminjam_perpustakaan_c
 version: 1.0.0+1
 publish_to: none
-description: A new Flutter project.
-environment: 
+description: Sebuah proyek Flutter baru.
+environment:
   sdk: '>=3.1.5 <4.0.0'
 
-dependencies: 
+dependencies:
+  datetime_picker_formfield: ^2.0.0
   cupertino_icons: ^1.0.2
   get: 4.6.5
   dio: 5.4.0
   pretty_dio_logger: ^1.3.1
   get_storage: ^2.1.1
-  flutter: 
+  flutter:
     sdk: flutter
 
-dev_dependencies: 
+dev_dependencies:
   flutter_lints: ^2.0.0
-  flutter_test: 
+  flutter_test:
     sdk: flutter
 
-flutter: 
+flutter:
   uses-material-design: true
-
+  assets:
+    - assets/
+  fonts:
+    - family: LibreBaskerville
+      fonts:
+        - asset: assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf
+    - family: Candal
+      fonts:
+        - asset: assets/fonts/Candal/Candal-Regular.ttf
